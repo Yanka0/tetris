@@ -1,0 +1,18 @@
+<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#000000" fill="#ffffff" id="svg_1" y="3.955359" x="10.178562" width="18" height="6" class="st0"/>
+  <rect stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#000000" fill="#ffffff" id="svg_2" y="7" x="12.955359" width="12" transform="matrix(6.123234e-17,-1,1,6.123234e-17,9,29) " height="6" class="st0"/>
+  <rect stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#000000" fill="#ffffff" id="svg_3" y="23" x="4" width="6" height="6" class="st0"/>
+  <rect stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#000000" fill="#ffffff" id="svg_4" y="16.955359" x="4" width="6" height="6" class="st0"/>
+  <rect stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#000000" fill="#ffffff" id="svg_5" y="23" x="10" width="6" height="6" class="st0"/>
+  <rect stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#000000" fill="#ffffff" id="svg_6" y="23" x="16" width="6" height="6" class="st0"/>
+  <rect stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#000000" fill="#ffffff" id="svg_7" y="23" x="22" width="6" height="6" class="st0"/>
+  <path d="m16.111601,10.305544c0.044641,0 0.089281,0 0.178562,0c0.133923,0 0.399912,0.022286 0.80353,0.044641c0.668583,0.037029 1.294575,0 1.919542,0c0.535686,0 0.982092,0 1.383856,0c0.178562,0 0.358318,0.010256 0.401764,0c0.097149,-0.022934 0.178562,-0.044641 0.267843,-0.044641c0.044641,0 0.089281,0 0.133923,0c0.04464,0 0.089281,0 0.133921,0c0.044641,0 0.133923,0 0.178562,0c0.044641,0 0.133923,0 0.178562,0l0.044641,0l0.04464,0" id="svg_9" stroke-opacity="null" stroke-width="2" stroke="#000000" fill="#ffffff"/>
+ </g>
+</svg>

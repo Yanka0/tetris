@@ -1,0 +1,193 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Karantina";
+  font-style: normal;
+  font-size: 64px;
+  line-height: 65px;
+  color: #000000;
+  background-color: #efefef;
+}
+p {
+  text-align: center;
+  margin: 0;
+}
+.game {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+
+  .leaderboard {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background-color: white;
+    z-index: -1;
+    .leaderboard__header {
+      margin-top: 10px;
+      background: #EA97FF;
+    }
+    .leaderboardItems {
+      li{
+        list-style: none;
+        font-size: 40px;
+        margin: 0 10px;
+      }
+    }
+    .record_header{
+      margin-top: 10px;
+      background: #FEA826;
+      .recordUser{
+        text-align: center;
+      }
+    }
+    
+  }
+  .tetris {
+    background: #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+    flex: 0 0 0;
+
+    .tetris__title {
+      display: block;
+      font-size: 66px;
+      align-self: center;
+      p {
+        background-color: white;
+        padding: 5px 120px;
+        margin-top: 5px;
+      }
+    }
+  }
+  #canvas {
+    border: 7px solid white;
+    box-shadow: 0 0 0 7px #000000;
+    margin: 10px;
+  }
+  .gamebtns {
+    display: flex;
+    background-color: #000000;
+    justify-content: space-around;
+    height: 10%;
+    .gameBtn {
+      align-self: center;
+      width: 11%;
+      
+    }
+  
+  }
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+  width: 20%;
+  .score {
+    margin-top: 10px;
+    background: rgba(145, 255, 235, 0.5);
+    .scoreNum {
+      text-align: center;
+    }
+  }
+  .you{
+    margin-top: 10px;
+    background: #68A4FF;
+    .yourName{
+      text-align: center;
+    }
+  }
+  .yourBest{
+    margin-top: 10px;
+    background: #FAFE26;
+    .yourBestNum{
+      text-align: center;
+    }
+  }
+}
+.pop_up{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color:rgba(0,0,0,.8);
+  z-index: 2;
+  .pop_up_container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    .pop_up_body{
+      margin: auto;
+      width: 500px;
+      background-color:#ffffff;
+      
+      border-radius: 20px;
+      text-align: center;
+      padding:50px 15px ;
+      position: relative;
+      p{
+        font-size: 20px;
+        line-height: normal;
+        font-family: 'Oswald', sans-serif;
+        color: rgb(0, 0, 0);
+      }
+      .title{
+        font-size: 35px;
+        font-weight: 700;
+        border-bottom: 1px solid rgb(0, 0, 0);
+      }
+      img {
+        width: 50px;
+        height: 50px;
+      }
+      .pop_up_close{
+        position: absolute;
+        top:0px;
+        right: 15px;
+        font-size: 21px;
+        color: rgb(0, 0, 0);
+        cursor:pointer
+      }
+    }
+  }
+}
+.info_pop_up{
+  z-index: 1;
+}
+.rules_pop_up{
+  background-color: rgb(0, 0, 0,.1);
+}
+#done{
+  display: inline-block; 
+  box-sizing: border-box;
+  padding: 0 25px;
+  margin: 0 15px ;
+  outline: none;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  height: 46px;
+  line-height: 46px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+  cursor: pointer;
+  user-select: none;
+  appearance: none;
+  touch-action: manipulation; 
+  vertical-align: top;
+  transition: box-shadow 0.2s;
+}
+#name {
+  padding:10px;
+  border:0;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  border-radius: 15px;
+  margin-bottom: 20px;
+
+}

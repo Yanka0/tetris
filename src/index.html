@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tetris</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karantina:wght@400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="game">
+      <div class="leaderboard">
+        <div class="leaderboard__header">
+         <p>Leaderboard</p>   
+        </div>
+        <div class="leaderboardItems"></div>
+     
+      </div>
+
+      <div class="tetris">
+          <div class="tetris__title">
+            <p>Tetris</p>
+        </div>
+       <canvas id="canvas" width="300" height="450" style="background-color: black;"></canvas>
+       <div class="gamebtns">
+        <img src="./img/arrowLeft.svg" class="gameBtn arrowLeft" alt="">
+        <img src="./img/arrowRight.svg"class="gameBtn arrowRight" alt="">
+        <img src="./img/change.svg" class="gameBtn change"alt="">
+       <img src="./img/arrowDown.svg" class="gameBtn arrowDown"alt="">
+       </div>
+      </div>
+
+      <div class="info">
+        <div class="score">
+            <p>Score</p>
+            <div class="scoreNum"></div>
+        </div>
+
+        <div class="you">
+          <p>NAME</p>
+          <div class="yourName"></div>
+        </div>
+
+        <div class="yourBest">
+          <p>YOUR BEST</p>
+          <div class="yourBestNum"></div>
+        </div>
+      </div>
+    </div>
+
+   <div class="rules_pop_up pop_up" >
+    <div class="rules_pop_up_container pop_up_container"  >
+      <div class="rules_pop_up_body pop_up_body">
+        <p class="rules_title title">RULES</p> 
+        <p>Случайные фигурки тетрамино падают сверху на поле. В полёте игрок может поворачивать фигурку на 90° и двигать её по горизонтали. Также можно «сбрасывать» фигурку, то есть ускорять её падение, когда уже решено, куда фигурка должна упасть. Фигурка летит до тех пор, пока не наткнётся на другую фигурку либо на низ поля. Если при этом заполнился горизонтальный ряд, он пропадает и всё, что выше него, опускается на одну клетку. Игра заканчивается, когда новая фигурка не может поместиться в игровое поле. Игрок получает очки за каждый заполненный ряд, поэтому его задача — заполнять ряды</p>
+        <img src="./img/blackShape.svg" alt="">
+        <div class="rules_pop_up_close pop_up_close">&#10006</div>
+      </div>
+    </div>
+   </div>
+
+   <div class="info_pop_up pop_up"style="display: none;">
+    <div class="info_pop_up_container pop_up_container"  >
+      <div class="info_pop_up_body pop_up_body">
+        <p class="info_title title">ENTER YOUR NAME</p> 
+        <form action="">
+          <input id= "name" type="text" placeholder="name"autocomplete="off">
+        </form>
+        <input id="done"type="button" name="done"  placeholder="DONE"  value="DONE"> 
+      </div>
+    </div>
+   </div>
+   
+   <div class="over_pop_up pop_up" style="display:none;">
+    <div class="over_pop_up_container pop_up_container"  >
+      <div class="over_pop_up_body pop_up_body">
+        <p class="over_title title">GAME OVER</p> 
+        <img src="./img/blackShape.svg" alt="">
+        <div class="over_pop_up_close pop_up_close">&#10006</div>
+      </div>
+    </div>
+   </div>
+  </body>
+</html>
