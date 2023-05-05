@@ -106,7 +106,7 @@ export class GameModel {
                 
           
               }
-            // check game over 
+            // проверка конца игры
             if (this.fallingPiece.y === 0) {
                 gameOver()
                 this.grid = this.makeStartingGrid()
@@ -126,19 +126,19 @@ export class GameModel {
         let x = this.fallingPiece.x 
         let y = this.fallingPiece.y 
         if (right) {
-            // move right
+            // право
             if (!this.collision(x + 1, y)) {
                 this.fallingPiece.x += 1
             }
         } else {
-            // move left
+            // лево
             if (!this.collision(x - 1, y)) {
                 this.fallingPiece.x -= 1
             }
         }
         this.renderGameState()
     }
-
+  
     rotate() {
         if (this.fallingPiece !== null) {
             let shape: number[][]= [...this.fallingPiece.shape.map((row:number[]) => [...row])]
